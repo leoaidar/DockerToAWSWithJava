@@ -16,7 +16,7 @@ deploy:
     provider:
         script:
             docker tag docker-to-aws-with-java:latest leoaidar/docker-to-aws-with-java:latest;
-            docker push leoaidar/docker-to-aws-with-java; 
+            docker push leoaidar/docker-to-aws-with-java:latest; 
         on:
             branch: master            
 notifications:
