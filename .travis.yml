@@ -14,11 +14,10 @@ before_deploy:
     echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
 deploy:
     provider: script
-        script: 
+        script:
             docker tag docker-to-aws-with-java:latest leoaidar/docker-to-aws-with-java:latest;
-            docker push leoaidar/docker-to-aws-with-java:latest;             
-        skip_cleanup: true
+            docker push leoaidar/docker-to-aws-with-java:latest; 
         on:
-            branch: master                    
+            branch: master            
 notifications:
     email: false
