@@ -1,2 +1,5 @@
 # DockerToAWSWithJava
 DockerToAWSWithJava
+
+*requirements 
+docker
